@@ -96,17 +96,29 @@
         @include heart;
         
       }
+      @for $i from 1 through 10 {
+        .card-menu:nth-child(#{$i}) {
+          animation-delay: if($i == 1, 0s, 0.2s * ($i - 1));
+        }
+      }
+      
     .card-menu{
-        &:hover{
-            p{
-               
-                    overflow: hidden;
-                    width: 15em;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-
-
-                  
+        transform: scale(0);
+        animation: card-menu 1s ease forwards;
+        
+        @media screen and (max-width: 768px) {
+            
+            &:hover{
+                p{
+                   
+                        overflow: hidden;
+                        width: 15em;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+    
+    
+                      
+                }
             }
         }
         @include card-menu;
@@ -161,6 +173,12 @@
 
         }
     }
+    @keyframes card-menu {
+        100%{
+            transform: scale(1);
+        }
+    }
+    
     .button{
         display: block;
         width: min-content;
