@@ -13,8 +13,217 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #F3F3F3;
+  background: #eaeaea;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 380px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #F3F3F3;
+  border-top-color: #9356DC;
+  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  animation: fade-out 0.5s 1.5s forwards;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url(../fonts/Shrikhand-Regular.ttf);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eaeaea;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 380px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #F3F3F3;
+  border-top-color: #9356DC;
+  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  animation: fade-out 0.5s 1.5s forwards;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+header {
+  background: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: relative;
+}
+@media screen and (max-width: 380px) {
+  header {
+    font-size: 0.8rem;
+  }
+}
+header h1 {
+  font-family: Shrikhand;
+}
+header img {
+  width: 30px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 380px) {
+  header img {
+    width: 20px;
+  }
+}
+
+address {
+  padding: 20px 0;
+  font-style: normal;
+  font-family: Roboto;
+  color: #353535;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 @font-face {
@@ -32,16 +241,936 @@ body {
   list-style: none;
 }
 
-body {
-  background: #F3F3F3;
+html {
+  scroll-behavior: smooth;
 }
 
-header {
-  background: white;
-  padding: 10px 0;
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+body {
+  background: #eaeaea;
 }
-header h1 {
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 380px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #F3F3F3;
+  border-top-color: #9356DC;
+  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  animation: fade-out 0.5s 1.5s forwards;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.reservation {
+  padding: 20px 20px 60px 20px;
+  background: #F3F3F3;
+  font-family: Roboto;
+  text-align: center;
+}
+.reservation h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 380px) {
+  .reservation h2 {
+    font-size: 1.4rem;
+  }
+}
+.reservation p {
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin: 20px 0 40px 0;
+}
+@media screen and (max-width: 380px) {
+  .reservation p {
+    font-size: 0.9rem;
+  }
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
   font-family: Shrikhand;
+  src: url(../fonts/Shrikhand-Regular.ttf);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eaeaea;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 380px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #F3F3F3;
+  border-top-color: #9356DC;
+  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  animation: fade-out 0.5s 1.5s forwards;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.fonctionnement {
+  font-family: Roboto;
+  padding: 25px;
+  background: white;
+}
+.fonctionnement .store {
+  color: #9356DC;
+}
+.fonctionnement h2 {
+  padding: 50px 0 0 15px;
+  font-family: Roboto;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 380px) {
+  .fonctionnement p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .fonctionnement p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .flex-fonc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+.fonctionnement .card-fonc:nth-of-type(1) {
+  font-size: 1.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 25px 0;
+  border-radius: 20px;
+  padding: 30px;
+  background: #eaeaea;
+  position: relative;
+  counter-reset: card-counter 0;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .card-fonc:nth-of-type(1) {
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .fonctionnement .card-fonc:nth-of-type(1) {
+    display: inline-block;
+    font-size: 1rem;
+  }
+}
+.fonctionnement .card-fonc:nth-of-type(1) i {
+  padding: 0 10px;
+}
+.fonctionnement .card-fonc:nth-of-type(1)::after {
+  content: counter(card-counter);
+  counter-increment: card-counter;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+  background: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.fonctionnement .card-fonc:nth-of-type(2) {
+  font-size: 1.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 25px 0;
+  border-radius: 20px;
+  padding: 30px;
+  background: #eaeaea;
+  position: relative;
+  counter-reset: card-counter 1;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .card-fonc:nth-of-type(2) {
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .fonctionnement .card-fonc:nth-of-type(2) {
+    display: inline-block;
+    font-size: 1rem;
+  }
+}
+.fonctionnement .card-fonc:nth-of-type(2) i {
+  padding: 0 10px;
+}
+.fonctionnement .card-fonc:nth-of-type(2)::after {
+  content: counter(card-counter);
+  counter-increment: card-counter;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+  background: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.fonctionnement .card-fonc:nth-of-type(3) {
+  font-size: 1.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 25px 0;
+  border-radius: 20px;
+  padding: 30px;
+  background: #eaeaea;
+  position: relative;
+  counter-reset: card-counter 2;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement .card-fonc:nth-of-type(3) {
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .fonctionnement .card-fonc:nth-of-type(3) {
+    display: inline-block;
+    font-size: 1rem;
+  }
+}
+.fonctionnement .card-fonc:nth-of-type(3) i {
+  padding: 0 10px;
+}
+.fonctionnement .card-fonc:nth-of-type(3)::after {
+  content: counter(card-counter);
+  counter-increment: card-counter;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+  background: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url(../fonts/Shrikhand-Regular.ttf);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eaeaea;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 380px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #F3F3F3;
+  border-top-color: #9356DC;
+  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  animation: fade-out 0.5s 1.5s forwards;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.restaurants {
+  padding: 25px;
+  font-family: Roboto;
+}
+@media screen and (min-width: 768px) {
+  .restaurants {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .restaurants .card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+.restaurants a, .restaurants a:visited, .restaurants a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.restaurants .new {
+  position: relative;
+}
+.restaurants .new::after {
+  top: 5px;
+  right: 5px;
+  content: "Nouveau";
+  color: #008766;
+  font-weight: 600;
+  background: #99E2D0;
+  padding: 10px;
+  position: absolute;
+}
+.restaurants .card {
+  transition: 0.4s;
+  margin: 30px 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  height: 200px;
+  border-radius: 10px;
+  background: white;
+}
+.restaurants .card:hover {
+  opacity: 0.8;
+}
+.restaurants .card .card-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.restaurants .empty {
+  display: inline-block;
+  background: url(../images/heart.svg) center/cover;
+  width: 25px;
+  height: 25px;
+  transition: 0.6s;
+}
+.restaurants .empty:hover {
+  background: url(../images/heart2.svg) center/cover;
+}
+@media screen and (max-width: 300px) {
+  .restaurants .empty {
+    padding-top: 15px;
+    margin-right: 5px;
+  }
+}
+.restaurants h2 {
+  padding: 50px 0 0 15px;
+  font-size: 2rem;
+}
+.restaurants a {
+  display: block;
+}
+
+.img1 {
+  border-radius: 10px 10px 0 0;
+  background: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) center/cover;
+}
+
+.img2 {
+  border-radius: 10px 10px 0 0;
+  background: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) center/cover;
+}
+
+.img3 {
+  border-radius: 10px 10px 0 0;
+  background: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) center/cover;
+}
+
+.img4 {
+  border-radius: 10px 10px 0 0;
+  background: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) center/cover;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url(../fonts/Shrikhand-Regular.ttf);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eaeaea;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 380px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #F3F3F3;
+  border-top-color: #9356DC;
+  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  animation: fade-out 0.5s 1.5s forwards;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+footer {
+  padding: 10px;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  background: #353535;
+}
+footer h5 {
+  font-weight: 500;
+  font-family: Shrikhand;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    gap: 30px;
+    padding: 50px 10px 10px 10px;
+  }
+}
+footer * {
+  color: white;
+  text-decoration: none;
+}
+footer a {
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url(../fonts/Shrikhand-Regular.ttf);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eaeaea;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 380px) {
+  .button {
+    font-size: 1rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #F3F3F3;
+  border-top-color: #9356DC;
+  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  animation: fade-out 0.5s 1.5s forwards;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.restaurant1, .restaurant2, .restaurant3, .restaurant4 {
+  font-family: Roboto;
+}
+.restaurant1 img, .restaurant2 img, .restaurant3 img, .restaurant4 img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
+  background: #F3F3F3;
+  margin-top: -20px;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+@media screen and (min-width: 768px) {
+  .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
+    max-width: 500px;
+    margin: -40px auto 0 auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
+    max-width: 800px;
+    margin: -60px auto 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
+    max-width: 1000px;
+    margin: -80px auto 0 auto;
+  }
+}
+@media screen and (max-width: 380px) {
+  .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
+    padding: 5px;
+  }
+}
+.restaurant1 section .title, .restaurant2 section .title, .restaurant3 section .title, .restaurant4 section .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
+  font-size: 2rem;
+  font-family: Shrikhand;
+}
+@media screen and (max-width: 380px) {
+  .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
+    padding-top: 5px;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .restaurant1 section h2, .restaurant1 section h3, .restaurant2 section h2, .restaurant2 section h3, .restaurant3 section h2, .restaurant3 section h3, .restaurant4 section h2, .restaurant4 section h3 {
+    padding-left: 15px;
+  }
+  .restaurant1 section h2::after, .restaurant1 section h3::after, .restaurant2 section h2::after, .restaurant2 section h3::after, .restaurant3 section h2::after, .restaurant3 section h3::after, .restaurant4 section h2::after, .restaurant4 section h3::after {
+    margin-left: 15px;
+  }
+}
+.restaurant1 section h3, .restaurant2 section h3, .restaurant3 section h3, .restaurant4 section h3 {
+  text-transform: uppercase;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  font-weight: 300;
+  position: relative;
+  margin: 20px 0;
+}
+.restaurant1 section h3::after, .restaurant2 section h3::after, .restaurant3 section h3::after, .restaurant4 section h3::after {
+  content: "";
+  position: absolute;
+  background: #99E2D0;
+  height: 2px;
+  width: 40px;
+  left: 0;
+  bottom: -5px;
+}
+.restaurant1 .empty, .restaurant2 .empty, .restaurant3 .empty, .restaurant4 .empty {
+  display: inline-block;
+  background: url(../images/heart.svg) center/cover;
+  width: 25px;
+  height: 25px;
+  transition: 0.6s;
+}
+.restaurant1 .empty:hover, .restaurant2 .empty:hover, .restaurant3 .empty:hover, .restaurant4 .empty:hover {
+  background: url(../images/heart2.svg) center/cover;
+}
+@media screen and (max-width: 300px) {
+  .restaurant1 .empty, .restaurant2 .empty, .restaurant3 .empty, .restaurant4 .empty {
+    padding-top: 15px;
+    margin-right: 5px;
+  }
+}
+.restaurant1 .card-menu, .restaurant2 .card-menu, .restaurant3 .card-menu, .restaurant4 .card-menu {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 20px 10px;
+  padding: 15px;
+  border-radius: 15px;
+  position: relative;
+}
+.restaurant1 .card-menu:hover p, .restaurant2 .card-menu:hover p, .restaurant3 .card-menu:hover p, .restaurant4 .card-menu:hover p {
+  overflow: hidden;
+  width: 15em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 300px) {
+  .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
+    font-size: 0.6rem;
+  }
+}
+.restaurant1 .card-menu strong, .restaurant2 .card-menu strong, .restaurant3 .card-menu strong, .restaurant4 .card-menu strong {
+  transition: 0.5s;
+}
+@media screen and (max-width: 300px) {
+  .restaurant1 .card-menu strong, .restaurant2 .card-menu strong, .restaurant3 .card-menu strong, .restaurant4 .card-menu strong {
+    font-size: 0.8rem;
+  }
+}
+.restaurant1 .card-menu:hover .price, .restaurant2 .card-menu:hover .price, .restaurant3 .card-menu:hover .price, .restaurant4 .card-menu:hover .price {
+  transform: translateX(-55px);
+}
+.restaurant1 .card-menu:hover::after, .restaurant2 .card-menu:hover::after, .restaurant3 .card-menu:hover::after, .restaurant4 .card-menu:hover::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  background: url(../images/circle-check-solid.svg), #99E2D0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: opacity 0.8s ease forwards;
+  border-radius: 0 10px 10px 0;
+}
+@keyframes opacity {
+  100% {
+    opacity: 1;
+  }
+}
+.restaurant1 .button, .restaurant2 .button, .restaurant3 .button, .restaurant4 .button {
+  display: block;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 40px auto;
+  transform: translateY(25%);
 }/*# sourceMappingURL=index.css.map */

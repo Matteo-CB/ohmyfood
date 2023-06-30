@@ -1,0 +1,162 @@
+@import '../settings';
+
+.restaurant1, .restaurant2, .restaurant3, .restaurant4{
+    font-family: $text;
+    img{
+        width: 100%;
+        position: relative;
+        z-index: -1;
+    }
+    section{
+        @media screen and (min-width: 768px) {
+            max-width: 500px;
+            margin: -40px auto 0 auto;
+        }
+        @media screen and (min-width: 1000px) {
+            max-width: 800px;
+            margin: -60px auto 0 auto;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1000px;
+            margin: -80px auto 0 auto;
+        }
+        background: $white;
+        margin-top: -20px;
+        padding: 20px;
+        @media screen and (max-width:380px) {
+            &{
+                padding: 15px;
+            }
+        }
+        @media screen and (max-width:300px) {
+            &{
+                padding: 5px;
+            }
+        }
+        border-radius: 20px 20px 0 0;
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                font-size: 2rem;
+                font-family: $title;
+                @media screen and (max-width:380px) {
+                    &{
+                        font-size: 1.4rem
+                    }
+                }
+                @media screen and (max-width:300px) {
+                    &{
+                        padding-top: 5px;
+                        font-size: 1.2rem
+                    }
+                }
+            }
+        }
+        h2, h3{
+            @media screen and (max-width:300px) {
+                &{
+                    padding-left: 15px
+                    
+                }
+                &::after{
+                    margin-left: 15px;
+                }
+            }
+        }
+        h3{
+            @include restau-subtitle;
+            margin: 20px 0;
+        }
+    }
+    .empty {
+        @include heart;
+        
+      }
+    .card-menu{
+        &:hover{
+            p{
+               
+                    overflow: hidden;
+                    width: 15em;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+
+                  
+            }
+        }
+        @include card-menu;
+        p{
+            
+            font-size: 0.9rem;
+            @media screen and (max-width:300px) {
+                &{
+                    font-size: 0.6rem
+                }
+            }
+        }
+        strong{
+            @media screen and (max-width:300px) {
+                &{
+                    font-size: 0.8rem
+                }
+            }
+            
+            transition: 0.5s;
+        }
+        position: relative;
+        &:hover{
+            
+            .price{
+                transform: translateX(-55px);
+            }
+            &::after {
+                content: "";
+                opacity: 0;
+                position: absolute;
+                height: 100%;
+                bottom: 0;
+                right: 0;
+                width: 60px;
+                background: url(../images/circle-check-solid.svg), $lightGreen;
+                background-position: center;
+                
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+                animation: 
+                opacity 0.8s ease forwards;
+                border-radius: 0 10px 10px 0;
+            }
+            
+            @keyframes opacity {
+                100%{
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+    .button{
+        display: block;
+        width: min-content;
+        margin: 40px auto;
+        transform: translateY(25%);
+    }
+    
+}
+
+.restaurant1{
+
+}
+.restaurant2{
+
+}
+.restaurant3{
+
+}
+.restaurant4{
+
+}

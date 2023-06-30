@@ -1,5 +1,7 @@
 // ---- Variables ----
 
+$card-counter: 0;
+
 // -- Color --
 
 $primary: #9356DC;
@@ -8,18 +10,25 @@ $tertiary: #99E2D0;
 
 // --
 
+
 $white: #F3F3F3;
 $lightGreen: #99E2D0;
 $green: #008766;
 $lightBlue: #89C8FA;
 $blue: #003A68;
 $darkGrey: #353535;
+$paleGrey: #eaeaea;
+
+// --
+
+$gradient: linear-gradient(#9356DC, #FF79DA);
 
 // -- Fonts --
 
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Regular.ttf);
+    
 }
 
 @font-face {
@@ -31,6 +40,109 @@ $text: Roboto;
 $logo: Shrikhand;
 $title: Shrikhand;
 
+// -- Mixins --
+
+@mixin button{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.4rem;
+    color: white;
+    background: $gradient;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 60px;
+    transition: 0.3s;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        opacity: 0.7;
+    }
+    @media screen and  (max-width: 380px) {
+        font-size: 1rem;
+    }
+    
+}
+@mixin card-fonc {
+    @media screen and  (min-width: 768px) {
+        display: inline-block;
+        font-size: 0.8rem;
+    }
+    @media screen and  (min-width: 900px) {
+        display: inline-block;
+        font-size: 1rem;
+    }
+    font-size: 1.3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 25px 0;
+    border-radius: 20px;
+    i {
+      padding: 0 10px;
+    }
+    padding: 30px;
+    background: $paleGrey;
+    position: relative; 
+    &::after {
+      content: counter(card-counter);
+      counter-increment: card-counter;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -10px;
+      background: $primary;
+      color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+  }
+  @mixin card-menu{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        background: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 20px 10px;
+        padding: 15px;
+        border-radius: 15px;
+  }
+  @mixin restau-subtitle{
+    text-transform: uppercase;
+    font-family: $text;
+    letter-spacing: 1px;
+    font-weight: 300;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background: $lightGreen;
+        height: 2px;
+        width: 40px;
+        left: 0;
+        bottom: -5px;
+    }
+  }
+  @mixin heart{
+    display: inline-block;
+        background: url(../images/heart.svg) center/cover;
+        width: 25px;
+        height: 25px;
+        transition: 0.6s;
+        &:hover{
+            background: url(../images/heart2.svg) center/cover;
+        }
+        @media screen and (max-width:300px) {
+            &{
+                padding-top: 15px;
+                margin-right: 5px;
+                
+            }
+        }
+  }
+  
+
+
 // Général
 
 *{
@@ -39,6 +151,59 @@ $title: Shrikhand;
     padding: 0;
     list-style: none;
 }
-body{
-    background: $white;
+html{
+    scroll-behavior: smooth;
 }
+body{
+    background: $paleGrey;
+}
+.button{
+    @include button;
+}
+.loader {
+    position: absolute;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 4px solid $white;
+    border-top-color: $primary;
+    animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes hide-loader {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+  }
+  
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    animation: fade-out 0.5s 1.5s forwards;
+    pointer-events: none;
+  }
+  
+  @keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+  }
+  
+  
+  
+  
+  
+  
+  

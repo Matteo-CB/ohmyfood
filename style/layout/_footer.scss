@@ -1,0 +1,29 @@
+@import '../settings';
+
+footer{
+    padding: 10px;
+    font-family: $text;
+    h5{
+        font-weight: 500;
+        font-family: $logo;
+        font-size: 1.4rem;
+    }
+    display: flex;
+    flex-direction: column;
+    background: $darkGrey;
+    @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+        gap: 30px;
+        padding: 50px 10px 10px 10px;
+    }
+    *{
+
+        color: white;
+        text-decoration: none;
+
+    }
+    a{
+        padding: 5px 0;
+        font-size: 0.9rem;
+    }
+}

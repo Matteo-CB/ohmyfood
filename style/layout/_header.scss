@@ -2,11 +2,30 @@
 
 header{
     background: white;
+    @media screen and (max-width:380px) {
+        &{
+            font-size: 0.8rem;
+        }
+    }
     padding: 10px 0;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     h1{
         font-family: $logo;
     
+    }
+    position: relative;
+    img{
+        width: 30px;
+        @media screen and (max-width:380px) {
+            &{
+                width: 20px;
+            }
+        }
+        
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

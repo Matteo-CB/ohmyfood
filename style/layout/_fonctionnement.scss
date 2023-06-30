@@ -1,0 +1,41 @@
+@import '../settings';
+
+.fonctionnement {
+    font-family: $text;
+    .store{
+        color: $primary;
+    }
+  padding: 25px;
+  background: white;
+
+  h2 {
+    padding: 50px 0 0 15px;
+    font-family: $text;
+    font-size: 1.8rem;
+  }
+  p{
+    @media screen and  (max-width: 380px) {
+        font-size: 0.8rem;
+    }
+    @media screen and  (max-width: 300px) {
+        font-size: 0.6rem;
+    }
+  }
+  .flex-fonc{
+
+      @media screen and  (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        max-width:1100px;
+        margin: 0 auto;
+    }
+  }
+  @for $i from 1 through 3 {
+    .card-fonc:nth-of-type(#{$i}) {
+      @include card-fonc;
+      counter-reset: card-counter $i - 1;
+    }
+  }
+}
