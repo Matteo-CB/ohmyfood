@@ -748,13 +748,31 @@ body {
 }
 .restaurants .empty {
   display: inline-block;
-  background: url(../images/heart.svg) center/cover;
+  position: relative;
   width: 25px;
   height: 25px;
+}
+.restaurants .empty::before, .restaurants .empty::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   transition: 0.6s;
 }
-.restaurants .empty:hover {
+.restaurants .empty::before {
+  background: url(../images/heart.svg) center/cover;
+}
+.restaurants .empty::after {
   background: url(../images/heart2.svg) center/cover;
+  opacity: 0;
+}
+.restaurants .empty:hover::before {
+  opacity: 0;
+}
+.restaurants .empty:hover::after {
+  opacity: 1;
 }
 @media screen and (max-width: 300px) {
   .restaurants .empty {
@@ -1097,13 +1115,31 @@ body {
 }
 .restaurant1 .empty, .restaurant2 .empty, .restaurant3 .empty, .restaurant4 .empty {
   display: inline-block;
-  background: url(../images/heart.svg) center/cover;
+  position: relative;
   width: 25px;
   height: 25px;
+}
+.restaurant1 .empty::before, .restaurant1 .empty::after, .restaurant2 .empty::before, .restaurant2 .empty::after, .restaurant3 .empty::before, .restaurant3 .empty::after, .restaurant4 .empty::before, .restaurant4 .empty::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   transition: 0.6s;
 }
-.restaurant1 .empty:hover, .restaurant2 .empty:hover, .restaurant3 .empty:hover, .restaurant4 .empty:hover {
+.restaurant1 .empty::before, .restaurant2 .empty::before, .restaurant3 .empty::before, .restaurant4 .empty::before {
+  background: url(../images/heart.svg) center/cover;
+}
+.restaurant1 .empty::after, .restaurant2 .empty::after, .restaurant3 .empty::after, .restaurant4 .empty::after {
   background: url(../images/heart2.svg) center/cover;
+  opacity: 0;
+}
+.restaurant1 .empty:hover::before, .restaurant2 .empty:hover::before, .restaurant3 .empty:hover::before, .restaurant4 .empty:hover::before {
+  opacity: 0;
+}
+.restaurant1 .empty:hover::after, .restaurant2 .empty:hover::after, .restaurant3 .empty:hover::after, .restaurant4 .empty:hover::after {
+  opacity: 1;
 }
 @media screen and (max-width: 300px) {
   .restaurant1 .empty, .restaurant2 .empty, .restaurant3 .empty, .restaurant4 .empty {
