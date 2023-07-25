@@ -35,62 +35,68 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
   .button {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .button {
+    font-size: 0.6rem;
+  }
+}
+
+.loading-screen {
+  background: white;
+  position: absolute;
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  animation: loading 2s ease forwards;
+}
 
 .loader {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  z-index: 3;
-  width: 40px;
-  height: 40px;
+  z-index: 200;
+  border: 5px solid rgb(220, 220, 220);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 4px solid #F3F3F3;
   border-top-color: #9356DC;
-  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+  transform: translate(-50%, -50%);
+  animation: loader 2s ease forwards;
 }
 
-@keyframes spin {
+@keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  95% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
+  99% {
+    z-index: 200;
+    transform: translate(-50%, -50%) rotate(720deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
+    z-index: -200;
   }
 }
-@keyframes hide-loader {
-  0% {
-    opacity: 1;
+@keyframes loading {
+  99% {
+    z-index: 100;
   }
   100% {
-    opacity: 0;
-    display: none;
-  }
-}
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  animation: fade-out 0.5s 1.5s forwards;
-  pointer-events: none;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+    z-index: -200;
   }
 }
 @font-face {
@@ -130,62 +136,68 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
   .button {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .button {
+    font-size: 0.6rem;
+  }
+}
+
+.loading-screen {
+  background: white;
+  position: absolute;
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  animation: loading 2s ease forwards;
+}
 
 .loader {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  z-index: 3;
-  width: 40px;
-  height: 40px;
+  z-index: 200;
+  border: 5px solid rgb(220, 220, 220);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 4px solid #F3F3F3;
   border-top-color: #9356DC;
-  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+  transform: translate(-50%, -50%);
+  animation: loader 2s ease forwards;
 }
 
-@keyframes spin {
+@keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  95% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
+  99% {
+    z-index: 200;
+    transform: translate(-50%, -50%) rotate(720deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
+    z-index: -200;
   }
 }
-@keyframes hide-loader {
-  0% {
-    opacity: 1;
+@keyframes loading {
+  99% {
+    z-index: 100;
   }
   100% {
-    opacity: 0;
-    display: none;
-  }
-}
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  animation: fade-out 0.5s 1.5s forwards;
-  pointer-events: none;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+    z-index: -200;
   }
 }
 header {
@@ -225,6 +237,16 @@ address {
   font-weight: 600;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 500px) {
+  address {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  address {
+    font-size: 0.8rem;
+  }
+}
 
 @font-face {
   font-family: Roboto;
@@ -263,62 +285,68 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
   .button {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .button {
+    font-size: 0.6rem;
+  }
+}
+
+.loading-screen {
+  background: white;
+  position: absolute;
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  animation: loading 2s ease forwards;
+}
 
 .loader {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  z-index: 3;
-  width: 40px;
-  height: 40px;
+  z-index: 200;
+  border: 5px solid rgb(220, 220, 220);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 4px solid #F3F3F3;
   border-top-color: #9356DC;
-  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+  transform: translate(-50%, -50%);
+  animation: loader 2s ease forwards;
 }
 
-@keyframes spin {
+@keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  95% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
+  99% {
+    z-index: 200;
+    transform: translate(-50%, -50%) rotate(720deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
+    z-index: -200;
   }
 }
-@keyframes hide-loader {
-  0% {
-    opacity: 1;
+@keyframes loading {
+  99% {
+    z-index: 100;
   }
   100% {
-    opacity: 0;
-    display: none;
-  }
-}
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  animation: fade-out 0.5s 1.5s forwards;
-  pointer-events: none;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+    z-index: -200;
   }
 }
 .reservation {
@@ -330,9 +358,19 @@ body {
 .reservation h2 {
   font-size: 2rem;
 }
+@media screen and (max-width: 1000px) {
+  .reservation h2 {
+    font-size: 1.8rem;
+  }
+}
 @media screen and (max-width: 380px) {
   .reservation h2 {
     font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .reservation h2 {
+    font-size: 1.2rem;
   }
 }
 .reservation p {
@@ -340,9 +378,19 @@ body {
   font-weight: 200;
   margin: 20px 0 40px 0;
 }
+@media screen and (max-width: 1000px) {
+  .reservation p {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 380px) {
   .reservation p {
     font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .reservation p {
+    font-size: 0.7rem;
   }
 }
 
@@ -383,62 +431,68 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
   .button {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .button {
+    font-size: 0.6rem;
+  }
+}
+
+.loading-screen {
+  background: white;
+  position: absolute;
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  animation: loading 2s ease forwards;
+}
 
 .loader {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  z-index: 3;
-  width: 40px;
-  height: 40px;
+  z-index: 200;
+  border: 5px solid rgb(220, 220, 220);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 4px solid #F3F3F3;
   border-top-color: #9356DC;
-  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+  transform: translate(-50%, -50%);
+  animation: loader 2s ease forwards;
 }
 
-@keyframes spin {
+@keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  95% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
+  99% {
+    z-index: 200;
+    transform: translate(-50%, -50%) rotate(720deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
+    z-index: -200;
   }
 }
-@keyframes hide-loader {
-  0% {
-    opacity: 1;
+@keyframes loading {
+  99% {
+    z-index: 100;
   }
   100% {
-    opacity: 0;
-    display: none;
-  }
-}
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  animation: fade-out 0.5s 1.5s forwards;
-  pointer-events: none;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+    z-index: -200;
   }
 }
 .fonctionnement {
@@ -453,15 +507,52 @@ body {
   padding: 50px 0 0 15px;
   font-family: Roboto;
   font-size: 1.8rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1200px) {
+  .fonctionnement h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 310px) {
+  .fonctionnement h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1200px) {
   .fonctionnement p {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 990px) {
+  .fonctionnement p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 900px) {
   .fonctionnement p {
     font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .fonctionnement p {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fonctionnement p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .fonctionnement p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 286px) {
+  .fonctionnement p {
+    font-size: 0.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -499,6 +590,11 @@ body {
 .fonctionnement .card-fonc:nth-of-type(1) i {
   padding: 0 10px;
 }
+@media screen and (max-width: 370px) {
+  .fonctionnement .card-fonc:nth-of-type(1) {
+    padding: 15px;
+  }
+}
 .fonctionnement .card-fonc:nth-of-type(1)::after {
   content: counter(card-counter);
   counter-increment: card-counter;
@@ -515,6 +611,13 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+}
+@media screen and (max-width: 340px) {
+  .fonctionnement .card-fonc:nth-of-type(1)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
 }
 .fonctionnement .card-fonc:nth-of-type(2) {
   font-size: 1.3rem;
@@ -541,6 +644,11 @@ body {
 .fonctionnement .card-fonc:nth-of-type(2) i {
   padding: 0 10px;
 }
+@media screen and (max-width: 370px) {
+  .fonctionnement .card-fonc:nth-of-type(2) {
+    padding: 15px;
+  }
+}
 .fonctionnement .card-fonc:nth-of-type(2)::after {
   content: counter(card-counter);
   counter-increment: card-counter;
@@ -557,6 +665,13 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+}
+@media screen and (max-width: 340px) {
+  .fonctionnement .card-fonc:nth-of-type(2)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
 }
 .fonctionnement .card-fonc:nth-of-type(3) {
   font-size: 1.3rem;
@@ -583,6 +698,11 @@ body {
 .fonctionnement .card-fonc:nth-of-type(3) i {
   padding: 0 10px;
 }
+@media screen and (max-width: 370px) {
+  .fonctionnement .card-fonc:nth-of-type(3) {
+    padding: 15px;
+  }
+}
 .fonctionnement .card-fonc:nth-of-type(3)::after {
   content: counter(card-counter);
   counter-increment: card-counter;
@@ -599,6 +719,13 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+}
+@media screen and (max-width: 340px) {
+  .fonctionnement .card-fonc:nth-of-type(3)::after {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
 }
 
 @font-face {
@@ -638,62 +765,68 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
   .button {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .button {
+    font-size: 0.6rem;
+  }
+}
+
+.loading-screen {
+  background: white;
+  position: absolute;
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  animation: loading 2s ease forwards;
+}
 
 .loader {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  z-index: 3;
-  width: 40px;
-  height: 40px;
+  z-index: 200;
+  border: 5px solid rgb(220, 220, 220);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 4px solid #F3F3F3;
   border-top-color: #9356DC;
-  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+  transform: translate(-50%, -50%);
+  animation: loader 2s ease forwards;
 }
 
-@keyframes spin {
+@keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  95% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
+  99% {
+    z-index: 200;
+    transform: translate(-50%, -50%) rotate(720deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
+    z-index: -200;
   }
 }
-@keyframes hide-loader {
-  0% {
-    opacity: 1;
+@keyframes loading {
+  99% {
+    z-index: 100;
   }
   100% {
-    opacity: 0;
-    display: none;
-  }
-}
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  animation: fade-out 0.5s 1.5s forwards;
-  pointer-events: none;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+    z-index: -200;
   }
 }
 .restaurants {
@@ -708,6 +841,11 @@ body {
   .restaurants .card-container {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .restaurants {
+    padding: 0;
   }
 }
 .restaurants a, .restaurants a:visited, .restaurants a:active {
@@ -727,24 +865,66 @@ body {
   padding: 10px;
   position: absolute;
 }
+@media screen and (max-width: 400px) {
+  .restaurants .new::after {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+}
 .restaurants .card {
   transition: 0.4s;
   margin: 30px 30px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   display: grid;
-  grid-template-rows: 60% 40%;
-  height: 200px;
+  grid-template-rows: 70% 30%;
+  height: 300px;
   border-radius: 10px;
   background: white;
 }
 .restaurants .card:hover {
   opacity: 0.8;
 }
+@media screen and (max-width: 1200px) {
+  .restaurants .card h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .restaurants .card h3 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .restaurants .card h3 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .restaurants .card p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .restaurants .card p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .restaurants .card p {
+    font-size: 0.7rem;
+  }
+}
 .restaurants .card .card-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  .restaurants .card {
+    height: 200px;
+    grid-template-rows: 65% 35%;
+  }
 }
 .restaurants .empty {
   display: inline-block;
@@ -783,6 +963,16 @@ body {
 .restaurants h2 {
   padding: 50px 0 0 15px;
   font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .restaurants h2 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .restaurants h2 {
+    font-size: 1.2rem;
+  }
 }
 .restaurants a {
   display: block;
@@ -845,62 +1035,68 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
   .button {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .button {
+    font-size: 0.6rem;
+  }
+}
+
+.loading-screen {
+  background: white;
+  position: absolute;
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  animation: loading 2s ease forwards;
+}
 
 .loader {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  z-index: 3;
-  width: 40px;
-  height: 40px;
+  z-index: 200;
+  border: 5px solid rgb(220, 220, 220);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 4px solid #F3F3F3;
   border-top-color: #9356DC;
-  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+  transform: translate(-50%, -50%);
+  animation: loader 2s ease forwards;
 }
 
-@keyframes spin {
+@keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  95% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
+  99% {
+    z-index: 200;
+    transform: translate(-50%, -50%) rotate(720deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
+    z-index: -200;
   }
 }
-@keyframes hide-loader {
-  0% {
-    opacity: 1;
+@keyframes loading {
+  99% {
+    z-index: 100;
   }
   100% {
-    opacity: 0;
-    display: none;
-  }
-}
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  animation: fade-out 0.5s 1.5s forwards;
-  pointer-events: none;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+    z-index: -200;
   }
 }
 footer {
@@ -913,12 +1109,13 @@ footer {
 footer h5 {
   font-weight: 500;
   font-family: Shrikhand;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 768px) {
   footer {
     flex-direction: row-reverse;
     gap: 30px;
+    align-items: center;
     padding: 50px 10px 10px 10px;
   }
 }
@@ -929,6 +1126,31 @@ footer * {
 footer a {
   padding: 5px 0;
   font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) {
+  footer a {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 790px) {
+  footer a {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  footer a {
+    font-size: 0.7rem;
+  }
+}
+footer .flex-footer {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  footer .flex-footer {
+    gap: 0;
+    flex-direction: column;
+  }
 }
 
 @font-face {
@@ -968,62 +1190,68 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px) {
   .button {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .button {
+    font-size: 0.6rem;
+  }
+}
+
+.loading-screen {
+  background: white;
+  position: absolute;
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  animation: loading 2s ease forwards;
+}
 
 .loader {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  z-index: 3;
-  width: 40px;
-  height: 40px;
+  z-index: 200;
+  border: 5px solid rgb(220, 220, 220);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 4px solid #F3F3F3;
   border-top-color: #9356DC;
-  animation: spin 1s linear forwards, hide-loader 0.5s 1.5s forwards;
+  transform: translate(-50%, -50%);
+  animation: loader 2s ease forwards;
 }
 
-@keyframes spin {
+@keyframes loader {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  95% {
+    transform: translate(-50%, -50%) rotate(720deg);
+  }
+  99% {
+    z-index: 200;
+    transform: translate(-50%, -50%) rotate(720deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(720deg);
+    z-index: -200;
   }
 }
-@keyframes hide-loader {
-  0% {
-    opacity: 1;
+@keyframes loading {
+  99% {
+    z-index: 100;
   }
   100% {
-    opacity: 0;
-    display: none;
-  }
-}
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  animation: fade-out 0.5s 1.5s forwards;
-  pointer-events: none;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
+    z-index: -200;
   }
 }
 .restaurant1, .restaurant2, .restaurant3, .restaurant4 {
@@ -1093,15 +1321,25 @@ body {
   font-size: 2rem;
   font-family: Shrikhand;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1000px) {
   .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
     font-size: 1.4rem;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
   .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
     padding-top: 5px;
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 295px) {
+  .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 300px) {
@@ -1167,36 +1405,78 @@ body {
   animation-delay: 0s;
 }
 .restaurant1 .card-menu:nth-child(2), .restaurant2 .card-menu:nth-child(2), .restaurant3 .card-menu:nth-child(2), .restaurant4 .card-menu:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 .restaurant1 .card-menu:nth-child(3), .restaurant2 .card-menu:nth-child(3), .restaurant3 .card-menu:nth-child(3), .restaurant4 .card-menu:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 .restaurant1 .card-menu:nth-child(4), .restaurant2 .card-menu:nth-child(4), .restaurant3 .card-menu:nth-child(4), .restaurant4 .card-menu:nth-child(4) {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 .restaurant1 .card-menu:nth-child(5), .restaurant2 .card-menu:nth-child(5), .restaurant3 .card-menu:nth-child(5), .restaurant4 .card-menu:nth-child(5) {
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
 }
 .restaurant1 .card-menu:nth-child(6), .restaurant2 .card-menu:nth-child(6), .restaurant3 .card-menu:nth-child(6), .restaurant4 .card-menu:nth-child(6) {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .restaurant1 .card-menu:nth-child(7), .restaurant2 .card-menu:nth-child(7), .restaurant3 .card-menu:nth-child(7), .restaurant4 .card-menu:nth-child(7) {
-  animation-delay: 1.2s;
+  animation-delay: 0.6s;
 }
 .restaurant1 .card-menu:nth-child(8), .restaurant2 .card-menu:nth-child(8), .restaurant3 .card-menu:nth-child(8), .restaurant4 .card-menu:nth-child(8) {
-  animation-delay: 1.4s;
+  animation-delay: 0.7s;
 }
 .restaurant1 .card-menu:nth-child(9), .restaurant2 .card-menu:nth-child(9), .restaurant3 .card-menu:nth-child(9), .restaurant4 .card-menu:nth-child(9) {
-  animation-delay: 1.6s;
+  animation-delay: 0.8s;
 }
 .restaurant1 .card-menu:nth-child(10), .restaurant2 .card-menu:nth-child(10), .restaurant3 .card-menu:nth-child(10), .restaurant4 .card-menu:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.restaurant1 .card-menu:nth-child(11), .restaurant2 .card-menu:nth-child(11), .restaurant3 .card-menu:nth-child(11), .restaurant4 .card-menu:nth-child(11) {
+  animation-delay: 1s;
+}
+.restaurant1 .card-menu:nth-child(12), .restaurant2 .card-menu:nth-child(12), .restaurant3 .card-menu:nth-child(12), .restaurant4 .card-menu:nth-child(12) {
+  animation-delay: 1.1s;
+}
+.restaurant1 .card-menu:nth-child(13), .restaurant2 .card-menu:nth-child(13), .restaurant3 .card-menu:nth-child(13), .restaurant4 .card-menu:nth-child(13) {
+  animation-delay: 1.2s;
+}
+.restaurant1 .card-menu:nth-child(14), .restaurant2 .card-menu:nth-child(14), .restaurant3 .card-menu:nth-child(14), .restaurant4 .card-menu:nth-child(14) {
+  animation-delay: 1.3s;
+}
+.restaurant1 .card-menu:nth-child(15), .restaurant2 .card-menu:nth-child(15), .restaurant3 .card-menu:nth-child(15), .restaurant4 .card-menu:nth-child(15) {
+  animation-delay: 1.4s;
+}
+.restaurant1 .card-menu:nth-child(16), .restaurant2 .card-menu:nth-child(16), .restaurant3 .card-menu:nth-child(16), .restaurant4 .card-menu:nth-child(16) {
+  animation-delay: 1.5s;
+}
+.restaurant1 .card-menu:nth-child(17), .restaurant2 .card-menu:nth-child(17), .restaurant3 .card-menu:nth-child(17), .restaurant4 .card-menu:nth-child(17) {
+  animation-delay: 1.6s;
+}
+.restaurant1 .card-menu:nth-child(18), .restaurant2 .card-menu:nth-child(18), .restaurant3 .card-menu:nth-child(18), .restaurant4 .card-menu:nth-child(18) {
+  animation-delay: 1.7s;
+}
+.restaurant1 .card-menu:nth-child(19), .restaurant2 .card-menu:nth-child(19), .restaurant3 .card-menu:nth-child(19), .restaurant4 .card-menu:nth-child(19) {
   animation-delay: 1.8s;
 }
+.restaurant1 .card-menu:nth-child(20), .restaurant2 .card-menu:nth-child(20), .restaurant3 .card-menu:nth-child(20), .restaurant4 .card-menu:nth-child(20) {
+  animation-delay: 1.9s;
+}
+@media screen and (max-width: 500px) {
+  .restaurant1 p, .restaurant2 p, .restaurant3 p, .restaurant4 p {
+    font-size: 0.7rem !important;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 370px) {
+  .restaurant1 p, .restaurant2 p, .restaurant3 p, .restaurant4 p {
+    font-size: 0.5rem !important;
+  }
+}
 .restaurant1 .card-menu, .restaurant2 .card-menu, .restaurant3 .card-menu, .restaurant4 .card-menu {
+  min-height: 60px;
   transform: scale(0);
   animation: card-menu 1s ease forwards;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.2509803922) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background: white;
   display: flex;
   align-items: flex-end;
@@ -1206,32 +1486,106 @@ body {
   border-radius: 15px;
   position: relative;
 }
+.restaurant1 .card-menu:hover p, .restaurant2 .card-menu:hover p, .restaurant3 .card-menu:hover p, .restaurant4 .card-menu:hover p {
+  overflow: hidden;
+  width: 40%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.restaurant1 .card-menu:hover strong:not(.price), .restaurant2 .card-menu:hover strong:not(.price), .restaurant3 .card-menu:hover strong:not(.price), .restaurant4 .card-menu:hover strong:not(.price) {
+  display: block;
+  overflow: hidden;
+  width: 40% !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
+  transition: 0.5s;
+}
+@media screen and (max-width: 500px) {
+  .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
+    font-size: 0.7rem !important;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 430px) {
+  .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
+    font-size: 0.5rem !important;
+  }
+}
+.restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
+  overflow: hidden;
+  transition: 0.5s;
+  white-space: nowrap;
+  width: 60% !important;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 370px) {
+  .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
+    font-size: 0.6rem !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
+    font-size: 0.8rem !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
+    font-size: 0.7rem !important;
+  }
+}
+@media screen and (max-width: 365px) {
+  .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
+    font-size: 0.6rem !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .restaurant1 .card-menu:hover p, .restaurant2 .card-menu:hover p, .restaurant3 .card-menu:hover p, .restaurant4 .card-menu:hover p {
     overflow: hidden;
-    width: 15em;
+    width: 80%;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .restaurant1 .card-menu:hover strong:not(.price), .restaurant2 .card-menu:hover strong:not(.price), .restaurant3 .card-menu:hover strong:not(.price), .restaurant4 .card-menu:hover strong:not(.price) {
+    display: block;
+    overflow: hidden;
+    width: 80% !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.restaurant1 .card-menu div, .restaurant2 .card-menu div, .restaurant3 .card-menu div, .restaurant4 .card-menu div {
+  align-items: flex-start;
+}
+@media screen and (max-width: 370px) {
+  .restaurant1 .card-menu, .restaurant2 .card-menu, .restaurant3 .card-menu, .restaurant4 .card-menu {
+    padding: 7.5px;
   }
 }
 .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
   font-size: 0.9rem;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .restaurant1 .card-menu .price, .restaurant2 .card-menu .price, .restaurant3 .card-menu .price, .restaurant4 .card-menu .price {
     font-size: 0.6rem;
   }
 }
 .restaurant1 .card-menu strong, .restaurant2 .card-menu strong, .restaurant3 .card-menu strong, .restaurant4 .card-menu strong {
   transition: 0.5s;
 }
-@media screen and (max-width: 300px) {
+@media screen and (min-width: 768px) {
   .restaurant1 .card-menu strong, .restaurant2 .card-menu strong, .restaurant3 .card-menu strong, .restaurant4 .card-menu strong {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 .restaurant1 .card-menu:hover .price, .restaurant2 .card-menu:hover .price, .restaurant3 .card-menu:hover .price, .restaurant4 .card-menu:hover .price {
-  transform: translateX(-55px);
+  transform: translateX(-65px);
 }
 .restaurant1 .card-menu:hover::after, .restaurant2 .card-menu:hover::after, .restaurant3 .card-menu:hover::after, .restaurant4 .card-menu:hover::after {
   content: "";
