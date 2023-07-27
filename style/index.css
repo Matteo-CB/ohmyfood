@@ -17,10 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #eaeaea;
-}
-
 .button {
   text-decoration: none;
   padding: 15px;
@@ -55,7 +51,7 @@ body {
   background: white;
   position: absolute;
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 100;
   animation: loading 2s ease forwards;
@@ -85,18 +81,22 @@ body {
   99% {
     z-index: 200;
     transform: translate(-50%, -50%) rotate(720deg);
+    display: block;
   }
   100% {
+    display: none;
     transform: translate(-50%, -50%) rotate(720deg);
-    z-index: -200;
+    z-index: -20344322222220;
   }
 }
 @keyframes loading {
   99% {
     z-index: 100;
+    display: block;
   }
   100% {
-    z-index: -200;
+    z-index: -22222222222222200;
+    display: none;
   }
 }
 @font-face {
@@ -118,10 +118,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #eaeaea;
-}
-
 .button {
   text-decoration: none;
   padding: 15px;
@@ -156,7 +152,7 @@ body {
   background: white;
   position: absolute;
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 100;
   animation: loading 2s ease forwards;
@@ -186,18 +182,22 @@ body {
   99% {
     z-index: 200;
     transform: translate(-50%, -50%) rotate(720deg);
+    display: block;
   }
   100% {
+    display: none;
     transform: translate(-50%, -50%) rotate(720deg);
-    z-index: -200;
+    z-index: -20344322222220;
   }
 }
 @keyframes loading {
   99% {
     z-index: 100;
+    display: block;
   }
   100% {
-    z-index: -200;
+    z-index: -22222222222222200;
+    display: none;
   }
 }
 header {
@@ -233,6 +233,7 @@ address {
   font-style: normal;
   font-family: Roboto;
   color: #353535;
+  background: #eaeaea;
   text-align: center;
   font-weight: 600;
   font-size: 1.2rem;
@@ -265,10 +266,6 @@ address {
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background: #eaeaea;
 }
 
 .button {
@@ -305,7 +302,7 @@ body {
   background: white;
   position: absolute;
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 100;
   animation: loading 2s ease forwards;
@@ -335,18 +332,22 @@ body {
   99% {
     z-index: 200;
     transform: translate(-50%, -50%) rotate(720deg);
+    display: block;
   }
   100% {
+    display: none;
     transform: translate(-50%, -50%) rotate(720deg);
-    z-index: -200;
+    z-index: -20344322222220;
   }
 }
 @keyframes loading {
   99% {
     z-index: 100;
+    display: block;
   }
   100% {
-    z-index: -200;
+    z-index: -22222222222222200;
+    display: none;
   }
 }
 .reservation {
@@ -413,10 +414,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #eaeaea;
-}
-
 .button {
   text-decoration: none;
   padding: 15px;
@@ -451,7 +448,7 @@ body {
   background: white;
   position: absolute;
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 100;
   animation: loading 2s ease forwards;
@@ -481,18 +478,22 @@ body {
   99% {
     z-index: 200;
     transform: translate(-50%, -50%) rotate(720deg);
+    display: block;
   }
   100% {
+    display: none;
     transform: translate(-50%, -50%) rotate(720deg);
-    z-index: -200;
+    z-index: -20344322222220;
   }
 }
 @keyframes loading {
   99% {
     z-index: 100;
+    display: block;
   }
   100% {
-    z-index: -200;
+    z-index: -22222222222222200;
+    display: none;
   }
 }
 .fonctionnement {
@@ -571,7 +572,7 @@ body {
   margin: 25px 0;
   border-radius: 20px;
   padding: 30px;
-  background: #eaeaea;
+  background: #f6f6f6;
   position: relative;
   counter-reset: card-counter 0;
 }
@@ -625,7 +626,7 @@ body {
   margin: 25px 0;
   border-radius: 20px;
   padding: 30px;
-  background: #eaeaea;
+  background: #f6f6f6;
   position: relative;
   counter-reset: card-counter 1;
 }
@@ -679,7 +680,7 @@ body {
   margin: 25px 0;
   border-radius: 20px;
   padding: 30px;
-  background: #eaeaea;
+  background: #f6f6f6;
   position: relative;
   counter-reset: card-counter 2;
 }
@@ -747,10 +748,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #eaeaea;
-}
-
 .button {
   text-decoration: none;
   padding: 15px;
@@ -785,7 +782,7 @@ body {
   background: white;
   position: absolute;
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 100;
   animation: loading 2s ease forwards;
@@ -815,21 +812,26 @@ body {
   99% {
     z-index: 200;
     transform: translate(-50%, -50%) rotate(720deg);
+    display: block;
   }
   100% {
+    display: none;
     transform: translate(-50%, -50%) rotate(720deg);
-    z-index: -200;
+    z-index: -20344322222220;
   }
 }
 @keyframes loading {
   99% {
     z-index: 100;
+    display: block;
   }
   100% {
-    z-index: -200;
+    z-index: -22222222222222200;
+    display: none;
   }
 }
 .restaurants {
+  background: #f6f6f6;
   padding: 25px;
   font-family: Roboto;
 }
@@ -1017,10 +1019,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #eaeaea;
-}
-
 .button {
   text-decoration: none;
   padding: 15px;
@@ -1055,7 +1053,7 @@ body {
   background: white;
   position: absolute;
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 100;
   animation: loading 2s ease forwards;
@@ -1085,18 +1083,22 @@ body {
   99% {
     z-index: 200;
     transform: translate(-50%, -50%) rotate(720deg);
+    display: block;
   }
   100% {
+    display: none;
     transform: translate(-50%, -50%) rotate(720deg);
-    z-index: -200;
+    z-index: -20344322222220;
   }
 }
 @keyframes loading {
   99% {
     z-index: 100;
+    display: block;
   }
   100% {
-    z-index: -200;
+    z-index: -22222222222222200;
+    display: none;
   }
 }
 footer {
@@ -1172,10 +1174,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #eaeaea;
-}
-
 .button {
   text-decoration: none;
   padding: 15px;
@@ -1210,7 +1208,7 @@ body {
   background: white;
   position: absolute;
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 100;
   animation: loading 2s ease forwards;
@@ -1240,18 +1238,22 @@ body {
   99% {
     z-index: 200;
     transform: translate(-50%, -50%) rotate(720deg);
+    display: block;
   }
   100% {
+    display: none;
     transform: translate(-50%, -50%) rotate(720deg);
-    z-index: -200;
+    z-index: -20344322222220;
   }
 }
 @keyframes loading {
   99% {
     z-index: 100;
+    display: block;
   }
   100% {
-    z-index: -200;
+    z-index: -22222222222222200;
+    display: none;
   }
 }
 .restaurant1, .restaurant2, .restaurant3, .restaurant4 {

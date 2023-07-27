@@ -18,7 +18,8 @@ $green: #008766;
 $lightBlue: #89C8FA;
 $blue: #003A68;
 $darkGrey: #353535;
-$paleGrey: #eaeaea;
+$paleGrey: #f6f6f6;
+$grey2: #eaeaea;
 
 // --
 
@@ -196,9 +197,7 @@ $title: Shrikhand;
 html{
     scroll-behavior: smooth;
 }
-body{
-    background: $paleGrey;
-}
+
 .button{
     @include button;
 }
@@ -206,7 +205,7 @@ body{
   background: white;
   position: absolute;
   height: 200vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   z-index: 100;
   animation: loading 2s ease forwards;
@@ -238,17 +237,21 @@ body{
   99%{
     z-index: 200;
     transform: translate(-50%,-50%) rotate(720deg);
+    display: block;
   }
   100%{
+    display: none;
     transform: translate(-50%,-50%) rotate(720deg);
-    z-index: -200;
+    z-index: -20344322222220;
   }
 }
 @keyframes loading {
   99%{
     z-index: 100;
+    display: block;
   }
   100%{
-    z-index: -200;
+    z-index: -22222222222222200;
+    display: none;
   }
 }
