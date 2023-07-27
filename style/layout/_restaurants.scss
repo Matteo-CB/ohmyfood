@@ -1,7 +1,9 @@
 @import '../settings';
+.resto-container{
 
-.restaurants{
     background: $paleGrey;
+}
+.restaurants{
     @media screen and (min-width:768px) {
         
         .card-container{

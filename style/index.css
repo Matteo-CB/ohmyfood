@@ -830,8 +830,11 @@ html {
     display: none;
   }
 }
-.restaurants {
+.resto-container {
   background: #f6f6f6;
+}
+
+.restaurants {
   padding: 25px;
   font-family: Roboto;
 }
