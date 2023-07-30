@@ -974,53 +974,14 @@ html {
     margin: -80px auto 0 auto;
   }
 }
-@media screen and (max-width: 380px) {
-  .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
-    padding: 15px;
-  }
-}
-@media screen and (max-width: 300px) {
-  .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
-    padding: 5px;
-  }
-}
 .restaurant1 section .title, .restaurant2 section .title, .restaurant3 section .title, .restaurant4 section .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-family: Shrikhand;
-}
-@media screen and (max-width: 1000px) {
-  .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
-    padding-top: 5px;
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 380px) {
-  .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 295px) {
-  .restaurant1 section .title h2, .restaurant2 section .title h2, .restaurant3 section .title h2, .restaurant4 section .title h2 {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 300px) {
-  .restaurant1 section h2, .restaurant1 section h3, .restaurant2 section h2, .restaurant2 section h3, .restaurant3 section h2, .restaurant3 section h3, .restaurant4 section h2, .restaurant4 section h3 {
-    padding-left: 15px;
-  }
-  .restaurant1 section h2::after, .restaurant1 section h3::after, .restaurant2 section h2::after, .restaurant2 section h3::after, .restaurant3 section h2::after, .restaurant3 section h3::after, .restaurant4 section h2::after, .restaurant4 section h3::after {
-    margin-left: 15px;
-  }
 }
 .restaurant1 section h3, .restaurant2 section h3, .restaurant3 section h3, .restaurant4 section h3 {
   text-transform: uppercase;
@@ -1127,17 +1088,6 @@ html {
 .restaurant1 .card-menu:nth-child(20), .restaurant2 .card-menu:nth-child(20), .restaurant3 .card-menu:nth-child(20), .restaurant4 .card-menu:nth-child(20) {
   animation-delay: 1.9s;
 }
-@media screen and (max-width: 500px) {
-  .restaurant1 p, .restaurant2 p, .restaurant3 p, .restaurant4 p {
-    font-size: 0.7rem !important;
-    white-space: nowrap;
-  }
-}
-@media screen and (max-width: 370px) {
-  .restaurant1 p, .restaurant2 p, .restaurant3 p, .restaurant4 p {
-    font-size: 0.5rem !important;
-  }
-}
 .restaurant1 .card-menu, .restaurant2 .card-menu, .restaurant3 .card-menu, .restaurant4 .card-menu {
   min-height: 60px;
   transform: scale(0);
@@ -1161,65 +1111,33 @@ html {
 .restaurant1 .card-menu:hover p, .restaurant2 .card-menu:hover p, .restaurant3 .card-menu:hover p, .restaurant4 .card-menu:hover p {
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 60%;
 }
 .restaurant1 .card-menu:hover strong:not(.price), .restaurant2 .card-menu:hover strong:not(.price), .restaurant3 .card-menu:hover strong:not(.price), .restaurant4 .card-menu:hover strong:not(.price) {
   display: block;
+  width: 60%;
   overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .restaurant1 .card-menu:hover p, .restaurant2 .card-menu:hover p, .restaurant3 .card-menu:hover p, .restaurant4 .card-menu:hover p {
+    width: 100%;
+  }
+  .restaurant1 .card-menu:hover strong:not(.price), .restaurant2 .card-menu:hover strong:not(.price), .restaurant3 .card-menu:hover strong:not(.price), .restaurant4 .card-menu:hover strong:not(.price) {
+    width: 100%;
+  }
 }
 .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
   transition: 0.5s;
-}
-@media screen and (max-width: 500px) {
-  .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
-    font-size: 0.7rem !important;
-    white-space: nowrap;
-  }
-}
-@media screen and (max-width: 430px) {
-  .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
-    font-size: 0.5rem !important;
-  }
+  font-size: 0.6rem !important;
 }
 .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
   overflow: hidden;
   transition: 0.5s;
   white-space: nowrap;
-}
-@media screen and (max-width: 370px) {
-  .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
-    font-size: 0.6rem !important;
-  }
-}
-@media screen and (max-width: 550px) {
-  .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
-    font-size: 0.8rem !important;
-  }
-}
-@media screen and (max-width: 450px) {
-  .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
-    font-size: 0.7rem !important;
-  }
-}
-@media screen and (max-width: 365px) {
-  .restaurant1 .card-menu strong:not(.price), .restaurant2 .card-menu strong:not(.price), .restaurant3 .card-menu strong:not(.price), .restaurant4 .card-menu strong:not(.price) {
-    font-size: 0.6rem !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .restaurant1 .card-menu:hover p, .restaurant2 .card-menu:hover p, .restaurant3 .card-menu:hover p, .restaurant4 .card-menu:hover p {
-    overflow: hidden;
-    width: 80%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .restaurant1 .card-menu:hover strong:not(.price), .restaurant2 .card-menu:hover strong:not(.price), .restaurant3 .card-menu:hover strong:not(.price), .restaurant4 .card-menu:hover strong:not(.price) {
-    display: block;
-    overflow: hidden;
-    width: 80% !important;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+  font-size: 0.8rem;
 }
 .restaurant1 .card-menu div, .restaurant2 .card-menu div, .restaurant3 .card-menu div, .restaurant4 .card-menu div {
   align-items: start;
@@ -1227,15 +1145,8 @@ html {
 .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
   font-size: 0.9rem;
 }
-@media screen and (max-width: 600px) {
-  .restaurant1 .card-menu p, .restaurant2 .card-menu p, .restaurant3 .card-menu p, .restaurant4 .card-menu p {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .restaurant1 .card-menu .price, .restaurant2 .card-menu .price, .restaurant3 .card-menu .price, .restaurant4 .card-menu .price {
-    font-size: 0.6rem;
-  }
+.restaurant1 .card-menu .price, .restaurant2 .card-menu .price, .restaurant3 .card-menu .price, .restaurant4 .card-menu .price {
+  font-size: 0.8rem;
 }
 .restaurant1 .card-menu strong, .restaurant2 .card-menu strong, .restaurant3 .card-menu strong, .restaurant4 .card-menu strong {
   transition: 0.5s;
