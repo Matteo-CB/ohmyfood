@@ -803,10 +803,22 @@ footer {
   flex-direction: column;
   background: #353535;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 50px;
+  }
+}
 footer h5 {
   font-weight: 500;
   font-family: Shrikhand;
   font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    gap: 15px;
+    align-items: center;
+  }
 }
 footer * {
   color: white;
@@ -820,6 +832,12 @@ footer .flex-footer {
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+@media screen and (min-width: 768px) {
+  footer .flex-footer {
+    flex-direction: row-reverse;
+    gap: 15px;
+  }
 }
 
 @font-face {
