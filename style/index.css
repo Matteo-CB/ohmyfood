@@ -962,13 +962,13 @@ html {
     margin: -100px auto 0 auto;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
     max-width: 800px;
     margin: -60px auto 0 auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .restaurant1 section, .restaurant2 section, .restaurant3 section, .restaurant4 section {
     max-width: 1000px;
     margin: -80px auto 0 auto;
