@@ -15,9 +15,7 @@
         margin: 0 auto;
     }
     padding: 25px;
-    @media screen and (max-width:768px) {
-        padding: 0;
-    }
+    
     font-family: $text;
     a, a:visited, a:active{
         text-decoration: none;
@@ -33,10 +31,7 @@
     font-weight: 600;
     background: $lightGreen;
     padding: 10px;
-    @media screen and (max-width:400px) {
-        font-size: 0.8rem;
-        padding: 5px;
-    }
+    font-size: 0.8rem;
     position: absolute;
   }
 }
@@ -46,26 +41,10 @@
             opacity: 0.8;
         }
         h3{
-            @media screen and  (max-width: 1200px) {
-                font-size: 1rem;
-            }
-            @media screen and  (max-width: 780px) {
-                font-size: 0.9rem;
-            }
-            @media screen and  (max-width: 330px) {
-                font-size: 0.8rem;
-            }
+            font-size: 1rem;
         }
         p{
-            @media screen and  (max-width: 1200px) {
-                font-size: 0.9rem;
-            }
-            @media screen and  (max-width: 780px) {
-                font-size: 0.8rem;
-            }
-            @media screen and  (max-width: 330px) {
-                font-size: 0.7rem;
-            }
+            font-size: 0.8rem;
         }
         .card-text{
             display: flex;
@@ -77,10 +56,10 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         display: grid;
         grid-template-rows: 70% 30%;
-        height: 300px;
-        @media screen and (max-width: 768px) {
-            height: 200px;
-            grid-template-rows: 65% 35%;
+        height: 200px;
+        @media screen and (min-width:576px) {
+        
+            height: 300px;
         }
         border-radius: 10px;
         
@@ -97,13 +76,8 @@
     
     h2{
         padding: 50px 0 0 15px;
-        font-size: 2rem;
-        @media screen and (max-width:600px) {
-            font-size: 1.6rem;
-        }
-        @media screen and (max-width:400px) {
-            font-size: 1.2rem;
-        }
+        font-size: 1.4rem;
+        
         
     }
     a{

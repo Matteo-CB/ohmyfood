@@ -20,7 +20,7 @@ html {
 .button {
   text-decoration: none;
   padding: 15px;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -30,21 +30,6 @@ html {
 .button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
-}
-@media screen and (max-width: 1000px) {
-  .button {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 460px) {
-  .button {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .button {
-    font-size: 0.6rem;
-  }
 }
 
 .loading-screen {
@@ -121,7 +106,7 @@ html {
 .button {
   text-decoration: none;
   padding: 15px;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -131,21 +116,6 @@ html {
 .button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
-}
-@media screen and (max-width: 1000px) {
-  .button {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 460px) {
-  .button {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .button {
-    font-size: 0.6rem;
-  }
 }
 
 .loading-screen {
@@ -207,13 +177,9 @@ header {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   position: relative;
 }
-@media screen and (max-width: 380px) {
-  header {
-    font-size: 0.8rem;
-  }
-}
 header h1 {
   font-family: Shrikhand;
+  font-size: 1.3rem;
 }
 header img {
   width: 30px;
@@ -221,11 +187,6 @@ header img {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-}
-@media screen and (max-width: 380px) {
-  header img {
-    width: 20px;
-  }
 }
 
 address {
@@ -236,17 +197,7 @@ address {
   background: #eaeaea;
   text-align: center;
   font-weight: 600;
-  font-size: 1.2rem;
-}
-@media screen and (max-width: 500px) {
-  address {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 380px) {
-  address {
-    font-size: 0.8rem;
-  }
+  font-size: 0.9rem;
 }
 
 @font-face {
@@ -271,7 +222,7 @@ html {
 .button {
   text-decoration: none;
   padding: 15px;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -281,21 +232,6 @@ html {
 .button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
-}
-@media screen and (max-width: 1000px) {
-  .button {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 460px) {
-  .button {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .button {
-    font-size: 0.6rem;
-  }
 }
 
 .loading-screen {
@@ -357,42 +293,11 @@ html {
   text-align: center;
 }
 .reservation h2 {
-  font-size: 2rem;
-}
-@media screen and (max-width: 1000px) {
-  .reservation h2 {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (max-width: 380px) {
-  .reservation h2 {
-    font-size: 1.4rem;
-  }
-}
-@media screen and (max-width: 340px) {
-  .reservation h2 {
-    font-size: 1.2rem;
-  }
+  font-size: 1.4rem;
 }
 .reservation p {
-  font-size: 1.4rem;
-  font-weight: 200;
-  margin: 20px 0 40px 0;
-}
-@media screen and (max-width: 1000px) {
-  .reservation p {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 380px) {
-  .reservation p {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 340px) {
-  .reservation p {
-    font-size: 0.7rem;
-  }
+  margin: 10px 0 30px 0;
+  font-size: 1rem;
 }
 
 @font-face {
@@ -417,7 +322,7 @@ html {
 .button {
   text-decoration: none;
   padding: 15px;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -427,21 +332,6 @@ html {
 .button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
-}
-@media screen and (max-width: 1000px) {
-  .button {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 460px) {
-  .button {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .button {
-    font-size: 0.6rem;
-  }
 }
 
 .loading-screen {
@@ -507,54 +397,9 @@ html {
 .fonctionnement h2 {
   padding: 50px 0 0 15px;
   font-family: Roboto;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   max-width: 1100px;
   margin: 0 auto;
-}
-@media screen and (max-width: 1200px) {
-  .fonctionnement h2 {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 310px) {
-  .fonctionnement h2 {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .fonctionnement p {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 990px) {
-  .fonctionnement p {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 900px) {
-  .fonctionnement p {
-    font-size: 0.6rem;
-  }
-}
-@media screen and (max-width: 850px) {
-  .fonctionnement p {
-    font-size: 0.5rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .fonctionnement p {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 340px) {
-  .fonctionnement p {
-    font-size: 0.6rem;
-  }
-}
-@media screen and (max-width: 286px) {
-  .fonctionnement p {
-    font-size: 0.5rem;
-  }
 }
 @media screen and (min-width: 768px) {
   .fonctionnement .flex-fonc {
@@ -567,7 +412,7 @@ html {
   }
 }
 .fonctionnement .card-fonc:nth-of-type(1) {
-  font-size: 1.3rem;
+  font-size: 0.7rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 25px 0;
   border-radius: 20px;
@@ -576,25 +421,8 @@ html {
   position: relative;
   counter-reset: card-counter 0;
 }
-@media screen and (min-width: 768px) {
-  .fonctionnement .card-fonc:nth-of-type(1) {
-    display: inline-block;
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .fonctionnement .card-fonc:nth-of-type(1) {
-    display: inline-block;
-    font-size: 1rem;
-  }
-}
 .fonctionnement .card-fonc:nth-of-type(1) i {
   padding: 0 10px;
-}
-@media screen and (max-width: 370px) {
-  .fonctionnement .card-fonc:nth-of-type(1) {
-    padding: 15px;
-  }
 }
 .fonctionnement .card-fonc:nth-of-type(1)::after {
   content: counter(card-counter);
@@ -611,17 +439,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-}
-@media screen and (max-width: 340px) {
-  .fonctionnement .card-fonc:nth-of-type(1)::after {
-    width: 20px;
-    height: 20px;
-    font-size: 0.7rem;
-  }
+  font-size: 0.8rem;
 }
 .fonctionnement .card-fonc:nth-of-type(2) {
-  font-size: 1.3rem;
+  font-size: 0.7rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 25px 0;
   border-radius: 20px;
@@ -630,25 +451,8 @@ html {
   position: relative;
   counter-reset: card-counter 1;
 }
-@media screen and (min-width: 768px) {
-  .fonctionnement .card-fonc:nth-of-type(2) {
-    display: inline-block;
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .fonctionnement .card-fonc:nth-of-type(2) {
-    display: inline-block;
-    font-size: 1rem;
-  }
-}
 .fonctionnement .card-fonc:nth-of-type(2) i {
   padding: 0 10px;
-}
-@media screen and (max-width: 370px) {
-  .fonctionnement .card-fonc:nth-of-type(2) {
-    padding: 15px;
-  }
 }
 .fonctionnement .card-fonc:nth-of-type(2)::after {
   content: counter(card-counter);
@@ -665,17 +469,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-}
-@media screen and (max-width: 340px) {
-  .fonctionnement .card-fonc:nth-of-type(2)::after {
-    width: 20px;
-    height: 20px;
-    font-size: 0.7rem;
-  }
+  font-size: 0.8rem;
 }
 .fonctionnement .card-fonc:nth-of-type(3) {
-  font-size: 1.3rem;
+  font-size: 0.7rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 25px 0;
   border-radius: 20px;
@@ -684,25 +481,8 @@ html {
   position: relative;
   counter-reset: card-counter 2;
 }
-@media screen and (min-width: 768px) {
-  .fonctionnement .card-fonc:nth-of-type(3) {
-    display: inline-block;
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .fonctionnement .card-fonc:nth-of-type(3) {
-    display: inline-block;
-    font-size: 1rem;
-  }
-}
 .fonctionnement .card-fonc:nth-of-type(3) i {
   padding: 0 10px;
-}
-@media screen and (max-width: 370px) {
-  .fonctionnement .card-fonc:nth-of-type(3) {
-    padding: 15px;
-  }
 }
 .fonctionnement .card-fonc:nth-of-type(3)::after {
   content: counter(card-counter);
@@ -719,14 +499,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-}
-@media screen and (max-width: 340px) {
-  .fonctionnement .card-fonc:nth-of-type(3)::after {
-    width: 20px;
-    height: 20px;
-    font-size: 0.7rem;
-  }
+  font-size: 0.8rem;
 }
 
 @font-face {
@@ -751,7 +524,7 @@ html {
 .button {
   text-decoration: none;
   padding: 15px;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -761,21 +534,6 @@ html {
 .button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
-}
-@media screen and (max-width: 1000px) {
-  .button {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 460px) {
-  .button {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .button {
-    font-size: 0.6rem;
-  }
 }
 
 .loading-screen {
@@ -848,11 +606,6 @@ html {
     grid-template-columns: 50% 50%;
   }
 }
-@media screen and (max-width: 768px) {
-  .restaurants {
-    padding: 0;
-  }
-}
 .restaurants a, .restaurants a:visited, .restaurants a:active {
   text-decoration: none;
   color: inherit;
@@ -868,13 +621,8 @@ html {
   font-weight: 600;
   background: #99E2D0;
   padding: 10px;
+  font-size: 0.8rem;
   position: absolute;
-}
-@media screen and (max-width: 400px) {
-  .restaurants .new::after {
-    font-size: 0.8rem;
-    padding: 5px;
-  }
 }
 .restaurants .card {
   transition: 0.4s;
@@ -882,42 +630,18 @@ html {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   display: grid;
   grid-template-rows: 70% 30%;
-  height: 300px;
+  height: 200px;
   border-radius: 10px;
   background: white;
 }
 .restaurants .card:hover {
   opacity: 0.8;
 }
-@media screen and (max-width: 1200px) {
-  .restaurants .card h3 {
-    font-size: 1rem;
-  }
+.restaurants .card h3 {
+  font-size: 1rem;
 }
-@media screen and (max-width: 780px) {
-  .restaurants .card h3 {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 330px) {
-  .restaurants .card h3 {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .restaurants .card p {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 780px) {
-  .restaurants .card p {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 330px) {
-  .restaurants .card p {
-    font-size: 0.7rem;
-  }
+.restaurants .card p {
+  font-size: 0.8rem;
 }
 .restaurants .card .card-text {
   display: flex;
@@ -925,10 +649,9 @@ html {
   justify-content: space-between;
   padding: 0 15px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   .restaurants .card {
-    height: 200px;
-    grid-template-rows: 65% 35%;
+    height: 300px;
   }
 }
 .restaurants .empty {
@@ -959,25 +682,9 @@ html {
 .restaurants .empty:hover::after {
   opacity: 1;
 }
-@media screen and (max-width: 300px) {
-  .restaurants .empty {
-    padding-top: 15px;
-    margin-right: 5px;
-  }
-}
 .restaurants h2 {
   padding: 50px 0 0 15px;
-  font-size: 2rem;
-}
-@media screen and (max-width: 600px) {
-  .restaurants h2 {
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .restaurants h2 {
-    font-size: 1.2rem;
-  }
+  font-size: 1.4rem;
 }
 .restaurants a {
   display: block;
@@ -1025,7 +732,7 @@ html {
 .button {
   text-decoration: none;
   padding: 15px;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1035,21 +742,6 @@ html {
 .button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
-}
-@media screen and (max-width: 1000px) {
-  .button {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 460px) {
-  .button {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .button {
-    font-size: 0.6rem;
-  }
 }
 
 .loading-screen {
@@ -1116,46 +808,18 @@ footer h5 {
   font-family: Shrikhand;
   font-size: 1.2rem;
 }
-@media screen and (min-width: 768px) {
-  footer {
-    flex-direction: row-reverse;
-    gap: 30px;
-    align-items: center;
-    padding: 50px 10px 10px 10px;
-  }
-}
 footer * {
   color: white;
   text-decoration: none;
 }
 footer a {
   padding: 5px 0;
-  font-size: 0.9rem;
-}
-@media screen and (min-width: 768px) {
-  footer a {
-    font-size: 0.5rem;
-  }
-}
-@media screen and (min-width: 790px) {
-  footer a {
-    font-size: 0.6rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  footer a {
-    font-size: 0.7rem;
-  }
+  font-size: 0.7rem;
 }
 footer .flex-footer {
   display: flex;
-  gap: 10px;
-}
-@media screen and (max-width: 768px) {
-  footer .flex-footer {
-    gap: 0;
-    flex-direction: column;
-  }
+  flex-direction: column;
+  gap: 3px;
 }
 
 @font-face {
@@ -1180,7 +844,7 @@ html {
 .button {
   text-decoration: none;
   padding: 15px;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1190,21 +854,6 @@ html {
 .button:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   opacity: 0.7;
-}
-@media screen and (max-width: 1000px) {
-  .button {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 460px) {
-  .button {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 360px) {
-  .button {
-    font-size: 0.6rem;
-  }
 }
 
 .loading-screen {
@@ -1399,12 +1048,6 @@ html {
 }
 .restaurant1 .empty:hover::after, .restaurant2 .empty:hover::after, .restaurant3 .empty:hover::after, .restaurant4 .empty:hover::after {
   opacity: 1;
-}
-@media screen and (max-width: 300px) {
-  .restaurant1 .empty, .restaurant2 .empty, .restaurant3 .empty, .restaurant4 .empty {
-    padding-top: 15px;
-    margin-right: 5px;
-  }
 }
 .restaurant1 .card-menu:nth-child(1), .restaurant2 .card-menu:nth-child(1), .restaurant3 .card-menu:nth-child(1), .restaurant4 .card-menu:nth-child(1) {
   animation-delay: 0s;

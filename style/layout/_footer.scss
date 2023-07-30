@@ -13,12 +13,7 @@ footer{
     
     flex-direction: column;
     background: $darkGrey;
-    @media screen and (min-width: 768px) {
-        flex-direction: row-reverse;
-        gap: 30px;
-        align-items: center;
-        padding: 50px 10px 10px 10px;
-    }
+    
     *{
 
         color: white;
@@ -27,26 +22,15 @@ footer{
     }
     a{
         padding: 5px 0;
-        font-size: 0.9rem;
-        @media screen and (min-width: 768px) {
-            font-size: 0.5rem;
-        }
-        @media screen and (min-width: 790px) {
-            font-size: 0.6rem;
-        }
-        @media screen and (min-width: 900px) {
-            font-size: 0.7rem;
-        }
+        font-size: 0.7rem;
+        
         
         
     }
     .flex-footer{
         display: flex;
-        @media screen and (max-width: 768px) {
-            gap: 0;
-            flex-direction: column;
-        }
-        gap: 10px;
+        flex-direction: column;
+        gap: 3px;
         
     }
 }

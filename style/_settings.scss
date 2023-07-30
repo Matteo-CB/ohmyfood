@@ -47,7 +47,7 @@ $title: Shrikhand;
 @mixin button{
     text-decoration: none;
     padding: 15px;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     color: white;
     background: $gradient;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -57,26 +57,12 @@ $title: Shrikhand;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         opacity: 0.7;
     }
-    @media screen and  (max-width:1000px) {
-      font-size: 1.2rem;
-  }
-    @media screen and  (max-width: 460px) {
-        font-size: 1rem;
-    }
-    @media screen and  (max-width: 360px) {
-      font-size: 0.6rem;}
+    
     
 }
 @mixin card-fonc {
-    @media screen and  (min-width: 768px) {
-        display: inline-block;
-        font-size: 0.8rem;
-    }
-    @media screen and  (min-width: 900px) {
-        display: inline-block;
-        font-size: 1rem;
-    }
-    font-size: 1.3rem;
+    
+    font-size: 0.7rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 25px 0;
     border-radius: 20px;
@@ -84,9 +70,7 @@ $title: Shrikhand;
       padding: 0 10px;
     }
     padding: 30px;
-    @media screen and  (max-width: 370px) {
-      padding: 15px;
-  }
+    
     background: $paleGrey;
     position: relative; 
     &::after {
@@ -101,15 +85,11 @@ $title: Shrikhand;
       border-radius: 50%;
       width: 30px;
       height: 30px;
-      @media screen and  (max-width: 340px) {
-        width: 20px;
-        height: 20px;
-        font-size: 0.7rem;
-    }
+      
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
   @mixin card-menu{
@@ -177,10 +157,7 @@ $title: Shrikhand;
       opacity: 1;
     }
     
-    @media screen and (max-width: 300px) {
-      padding-top: 15px;
-      margin-right: 5px;
-    }
+    
   }
   
   
